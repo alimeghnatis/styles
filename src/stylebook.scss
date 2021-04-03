@@ -27,7 +27,7 @@ $root-font-map:(
   "default":"paragraph", // name of another font in the map
 );
 
-//@include fonts.external-imports; //Initially we import the dependencies
+@include fonts.external-imports; //Initially we import the dependencies
 
 @include mixins.font-import-from-map($import-font-map, $define-icon-getters:true);
 @include mixins.reset;
