@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/modern-css-reset@1.4.0/dist/reset.min.css"
+    />
+    <link rel="stylesheet" href="/main.css" />
+  </head>
+  <body>
+    <style>
+      :root {
+      }
+
+      html {
+        font-size: 16px;
+      }
+
+      .circle {
+        border-radius: 50%;
+        display: inline-block;
+        height: 3em;
+        width: 3em;
+        background: var(--x, crimson);
+        color: var(--on-x);
+        border: 10px solid var(--dark-x, crimson);
+      }
+
+      .circle > * {
+        height: 3em;
+        width: 3em;
+        text-align: center;
+      }
+
+      .circle:hover {
+        background: var(--light-x, crimson);
+      }
+
+      #apple-demo {
+        position: relative;
+        text-align: center;
+      }
+
+      @media only screen and (min-width: 600px) {
+        #apple-demo {
+          background: var(--dark-pearl);
+          display: grid;
+          grid-template-columns: 1fr minmax(300px, 3fr) 1fr;
+        }
+        .content {
+          border-radius: 1em;
+          overflow: hidden;
+          grid-column: 2 / span 1;
+          background: green;
+          display: grid;
+          grid-template-areas:
+            "text illustration"
+            "text legend";
+        }
+
+        p.text {
+          grid-area: text;
+        }
+        p.legend {
+          grid-area: legend;
+        }
+        .illustration {
+          grid-area: illustration;
+        }
+      }
+    </style>
+    <div>
+      <p>This text uses the primary color</p>
+      <div class="circle x-green">
+        <p>1</p>
+      </div>
+      <div class="circle x-red">
+        <p>2</p>
+      </div>
+      <div class="circle x-primary">
+        <p>3</p>
+      </div>
+      <div class="circle x-pearl">
+        <p>4</p>
+      </div>
+    </div>
+    <main class="y-pearl b-y">
+      This is the main apge content
+      <section class="y-green b-y" id="apple-demo">
+        <div class="content">
+          <p class="text">
+            The narrow-band LED-powered backlight allows MacBook Pro to
+            represent the P3 wide <em>color</em>gamut for brilliant,
+            true-to-life color in photos and videos.
+            <em class="super">super</em>
+          </p>
+          <img
+            class="illustration"
+            src="https://images.pexels.com/photos/3184454/pexels-photo-3184454.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            alt=""
+          />
+          <p class="legend">Legend of the picture</p>
+        </div>
+      </section>
+      <section class="y-blue b-y">2</section>
+      <section class="y-orange b-y">3</section>
+    </main>
+  </body>
+</html>

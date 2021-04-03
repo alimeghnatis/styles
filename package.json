@@ -1,0 +1,42 @@
+{
+  "name": "@redlibre/styles",
+  "author": "Red Libre",
+  "version": "0.0.2-alpha.6",
+  "repository": "github:redlibre-mx/styles",
+  "main": "dist/main.min.css",
+  "scripts": {
+    "compile": "sass src/main.scss dist/main.css -I node_modules -c --no-source-map && npm run filesize -- dist/main.css",
+    "minify": "postcss dist/main.css -o dist/main.min.css && npm run filesize -- dist/main.min.css",
+    "build": "npm run compile && npm run minify",
+    "prepare": "npm run build",
+    "postinstall": "node scripts/postinstall.js",
+    "filesize": "node scripts/filesize.js",
+    "test:stylelint": "stylelint src/**/*.scss --rd --rdd --risd --color --formatter verbose",
+    "fix:stylelint": "npm run test:stylelint -- --fix",
+    "test": "npm run test:stylelint",
+    "relink": "npm link @aztlan/swatch @aztlan/destination @aztlan/stylebook",
+    "test:server": "http-server ./dist -p 3000"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "css-mqpacker": "^7.0.0",
+    "cssnano": "^4.1.10",
+    "filesize": "^6.1.0",
+    "http-server": "^0.12.3",
+    "jsonlint": "^1.6.3",
+    "postcss": "^8.2.7",
+    "postcss-cli": "^8.3.1",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-scss": "^3.0.4",
+    "prettier": "^2.2.1",
+    "sass": "^1.32.8",
+    "stylelint": "^13.11.0",
+    "stylelint-config-palantir": "^5.0.0",
+    "stylelint-scss": "^3.19.0"
+  },
+  "dependencies": {
+    "@aztlan/destination": "0.0.1-alpha.0",
+    "@aztlan/stylebook": "0.0.3-alpha.0",
+    "@aztlan/swatch": "0.0.1-beta.0"
+  }
+}

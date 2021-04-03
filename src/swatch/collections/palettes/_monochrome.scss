@@ -1,0 +1,18 @@
+$color-1:#292828;
+$color-2:#444242;
+$color-3:#666b67;
+$color-4:#767e79;
+$color-5:#97a89f;
+$color-6:#afbdb6;
+$color-7:#c2cec8;
+$color-8:#dce5e0;
+$color-9:#f0f6f3;
+
+$palette:(
+  // Monochrome
+  "white":[$color-9 $color-8 null $color-2],
+  "pearl":[$color-7 $color-6 $color-8 null],
+  "grey":[$color-5 $color-4 $color-6 null],
+  "anchor":[$color-3 $color-2 $color-4 null],
+  "black":[$color-1 null $color-2 null],
+);

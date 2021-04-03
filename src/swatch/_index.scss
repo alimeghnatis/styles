@@ -1,0 +1,30 @@
+@use "@aztlan/swatch/src/collections/palettes" as default-palettes;
+@use "@aztlan/swatch/src/mixins" with (
+  $contrast-using-light-text:var(--white),
+  $contrast-using-dark-text:var(--black)
+);
+@use "collections/palettes";
+@use "collections/colorschemes";
+
+//
+// Main Mixin
+//
+
+@mixin main {
+  :root {
+    @include mixins.define-variables(palettes.$monochrome-palette);
+    @include mixins.define-variables(default-palettes.$social-media-palette);
+  }
+
+  @include mixins.setters-from-map(colorschemes.$light-colorscheme);
+  @include mixins.setters-from-map(palettes.$monochrome-palette);
+  @include mixins.setters-from-map(default-palettes.$social-media-palette);
+  @include mixins.define-theme(colorschemes.$light-colorscheme, "ui-light", true);
+  // @include mixins.define-theme(colorschemes.$dark-colorscheme, "ui-dark");
+  //@include mixins.define-theme-extras(vars.$colorscheme-light-extras, "ui-light");
+  @include mixins.getters;
+}
+
+@include main();
+
+

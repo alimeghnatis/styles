@@ -1,0 +1,54 @@
+//@use "../palettes/monochrome";
+
+@use "@aztlan/swatch/src/collections/palettes/monochrome";
+
+$text-black:#292828;
+$text-white:#ffffff;
+
+//$base-violet:#213a8f !default;
+//$base-secondary:#ff947a !default;
+//$base-accent1:#32f9e1 !default;
+//$base-accent2:#ee4266 !default;
+//$base-accent3:#fc60a8 !default;
+
+// Colorscheme
+
+// Note for future team members : this is the colorscheme of Chinmaya,
+// published on this PR https://github.com/HelloPareto/styles/pull/1/files
+
+$colorscheme:(
+  // Wheel
+  "red":[#d62622 #b50b30 #ff8582 $text-white],
+  "pink":[#ffa291 #de6d68 #ffcac1 $text-black],
+  "orange":[#ff7b00 #de5200 #ffa95a $text-black],
+  "yellow":[#ffb800 #ff7b00 #ffd15a $text-black],
+  "indigo":[#a0dec8 #71d1af #f0f6f3 $text-white],
+  "indigo2":[#a0dec8 #71d1af #f0f6f3 $text-black],
+  "green":[#00af5f #3e8e00 #4cd896 $text-white],
+  "blue":[#007fe3 #0d61de #5ab6ff $text-white],
+  "violet":[#bd8ce6 #8a64c5 #e5c7ff $text-white],
+  "clear":[#f0f6f3 #a0dec8 #ffffff #a0dec8],
+  // Modals
+  "success":[var(--green) var(--dark-green) var(--light-green) var(--on-green)],
+  "warning":[var(--orange) var(--dark-orange) var(--light-orange) var(--on-orange)],
+  "error":[var(--red) var(--dark-red) var(--light-red) var(--on-red)],
+  // UI
+  "background":[var(--black) var(--dark-black) var(--light-black) var(--on-black)],
+  "paragraph":[var(--white) var(--dark-white) var(--light-white) var(--on-white)],
+  "heading":[var(--white) var(--dark-white) var(--light-white) var(--on-white)],
+  "subtitle":[var(--pearl) var(--dark-pearl) var(--light-pearl) var(--on-pearl)],
+  "metadata":[var(--grey) var(--dark-grey) var(--light-grey) var(--on-grey)],
+  "link":[var(--blue) var(--dark-blue) var(--light-blue) var(--on-blue)],
+  "navlink":[var(--violet) var(--dark-violet) var(--light-violet) var(--on-violet)]
+);
+
+
+$colorscheme-light-shadow-color:monochrome.$base-grey;
+$colorscheme-light-extras:(
+  "shadow":.2em .2em .5em rgba(
+    red($colorscheme-light-shadow-color),
+    blue($colorscheme-light-shadow-color),
+    green($colorscheme-light-shadow-color),
+    .8
+  ),
+);
