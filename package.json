@@ -1,7 +1,7 @@
 {
   "name": "@redlibre/styles",
   "author": "Red Libre",
-  "version": "0.0.2-alpha.7",
+  "version": "0.0.2-alpha.8",
   "repository": "github:redlibre-mx/styles",
   "main": "dist/main.min.css",
   "scripts": {
