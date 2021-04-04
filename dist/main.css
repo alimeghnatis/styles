@@ -219,9 +219,9 @@ TODO Orphans ? Widows ?
 @font-face {
   font-display: fallback;
   font-family: "heading";
-  font-style: "normal";
-  font-weight: "bold";
-  src: url("/heading.bold.woff2") format("woff2"), url("/heading.bold.woff") format("woff");
+  font-style: "italic";
+  font-weight: "normal";
+  src: url("/heading.italic.woff2") format("woff2"), url("/heading.italic.woff") format("woff");
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-smooth: always;
@@ -2095,6 +2095,96 @@ pre {
   --on-y: var(--on-navlink);
 }
 
+.x-exp,
+.xh-exp:focus,
+.xh-exp:hover {
+  --x: var(--exp);
+  --light-x: var(--light-exp);
+  --dark-x: var(--dark-exp);
+  --on-x: var(--on-exp);
+}
+
+.y-exp,
+.yh-exp:focus,
+.yh-exp:hover {
+  --y: var(--exp);
+  --light-y: var(--light-exp);
+  --dark-y: var(--dark-exp);
+  --on-y: var(--on-exp);
+}
+
+.x-exp2,
+.xh-exp2:focus,
+.xh-exp2:hover {
+  --x: var(--exp2);
+  --light-x: var(--light-exp2);
+  --dark-x: var(--dark-exp2);
+  --on-x: var(--on-exp2);
+}
+
+.y-exp2,
+.yh-exp2:focus,
+.yh-exp2:hover {
+  --y: var(--exp2);
+  --light-y: var(--light-exp2);
+  --dark-y: var(--dark-exp2);
+  --on-y: var(--on-exp2);
+}
+
+.x-exp3,
+.xh-exp3:focus,
+.xh-exp3:hover {
+  --x: var(--exp3);
+  --light-x: var(--light-exp3);
+  --dark-x: var(--dark-exp3);
+  --on-x: var(--on-exp3);
+}
+
+.y-exp3,
+.yh-exp3:focus,
+.yh-exp3:hover {
+  --y: var(--exp3);
+  --light-y: var(--light-exp3);
+  --dark-y: var(--dark-exp3);
+  --on-y: var(--on-exp3);
+}
+
+.x-exp4,
+.xh-exp4:focus,
+.xh-exp4:hover {
+  --x: var(--exp4);
+  --light-x: var(--light-exp4);
+  --dark-x: var(--dark-exp4);
+  --on-x: var(--on-exp4);
+}
+
+.y-exp4,
+.yh-exp4:focus,
+.yh-exp4:hover {
+  --y: var(--exp4);
+  --light-y: var(--light-exp4);
+  --dark-y: var(--dark-exp4);
+  --on-y: var(--on-exp4);
+}
+
+.x-exp5,
+.xh-exp5:focus,
+.xh-exp5:hover {
+  --x: var(--exp5);
+  --light-x: var(--light-exp5);
+  --dark-x: var(--dark-exp5);
+  --on-x: var(--on-exp5);
+}
+
+.y-exp5,
+.yh-exp5:focus,
+.yh-exp5:hover {
+  --y: var(--exp5);
+  --light-y: var(--light-exp5);
+  --dark-y: var(--dark-exp5);
+  --on-y: var(--on-exp5);
+}
+
 .x-white,
 .xh-white:focus,
 .xh-white:hover {
@@ -2339,6 +2429,26 @@ pre {
   --dark-navlink: var(--dark-violet);
   --light-navlink: var(--light-violet);
   --on-navlink: var(--on-violet);
+  --exp: #d0d3dc;
+  --dark-exp: #b9bdcb;
+  --light-exp: #e8e9ee;
+  --on-exp: #292828;
+  --exp2: #d7d5d7;
+  --dark-exp2: #c3c1c3;
+  --light-exp2: #ebeaeb;
+  --on-exp2: #292828;
+  --exp3: #f0d4d1;
+  --dark-exp3: #ebc6c1;
+  --light-exp3: #faf1f0;
+  --on-exp3: #292828;
+  --exp4: #ffe1c2;
+  --dark-exp4: #ffcc99;
+  --light-exp4: #fff5eb;
+  --on-exp4: #292828;
+  --exp5: #e4ddde;
+  --dark-exp5: #dbd2d3;
+  --light-exp5: #f6f4f4;
+  --on-exp5: #292828;
 }
 
 .b-x {
