@@ -39,7 +39,13 @@ $colorscheme:(
   "subtitle":[var(--anchor) var(--dark-anchor) var(--light-anchor) var(--on-anchor)],
   "metadata":[var(--grey) var(--dark-grey) var(--light-grey) var(--on-grey)],
   "link":[var(--blue) var(--dark-blue) var(--light-blue) var(--on-blue)],
-  "navlink":[var(--violet) var(--dark-violet) var(--light-violet) var(--on-violet)]
+  "navlink":[var(--violet) var(--dark-violet) var(--light-violet) var(--on-violet)],
+  // Experimental from https://coolors.co/d0d3dc-d7d5d7-f0d4d1-ffe1c2-e4ddde
+  "exp":[#d0d3dc #b9bdcb #e8e9ee $text-black], //Super light blue
+  "exp2":[#d7d5d7 #c3c1c3 #ebeaeb $text-black], //Super light grey
+  "exp3":[#f0d4d1 #ebc6c1 #faf1f0 $text-black], //Super light rose
+  "exp4":[#ffe1c2 #ffcc99 #fff5eb $text-black], //Super light champagne
+  "exp5":[#e4ddde #dbd2d3 #f6f4f4 $text-black], //Super light brown
 );
 
 

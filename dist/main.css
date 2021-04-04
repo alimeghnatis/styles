@@ -747,9 +747,9 @@ template {
 }
 
 :root {
-  --font-paragraph: hk grotesk pro, helvetica neue, helvetica;
-  --font-heading: hk grotesk pro, helvetica neue, helvetica;
-  --font-subtitle: hk grotesk pro, helvetica neue, helvetica;
+  --font-paragraph: paragraph, hk grotesk pro, helvetica neue, helvetica;
+  --font-heading: heading, hk grotesk pro, helvetica neue, helvetica;
+  --font-subtitle: subtitle, hk grotesk pro, helvetica neue, helvetica;
   --font-default: var(--font-paragraph);
   --theme-default-line-height: 1.35em;
   --theme-heading-line-height: 1em;
