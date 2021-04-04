@@ -10,7 +10,6 @@ $import-font-map:(
   ),
   "heading":(
     "normal-normal":"heading",
-    "normal-italic":"heading.italic",
   ),
   "subtitle":(
     "normal-normal":"subtitle",
@@ -19,6 +18,7 @@ $import-font-map:(
     "default":"icons",
   )
 );
+
 
 $root-font-map:(
   "paragraph":"hk grotesk pro, helvetica neue, helvetica", // font-family
