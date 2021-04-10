@@ -20,23 +20,23 @@
   "license": "MIT",
   "devDependencies": {
     "css-mqpacker": "^7.0.0",
-    "cssnano": "^4.1.10",
+    "cssnano": "^5.0.0",
     "filesize": "^6.1.0",
     "http-server": "^0.12.3",
     "jsonlint": "^1.6.3",
-    "postcss": "^8.2.7",
+    "postcss": "^8.2.9",
     "postcss-cli": "^8.3.1",
     "postcss-preset-env": "^6.7.0",
-    "postcss-scss": "^3.0.4",
+    "postcss-scss": "^3.0.5",
     "prettier": "^2.2.1",
     "sass": "^1.32.8",
-    "stylelint": "^13.11.0",
+    "stylelint": "^13.12.0",
     "stylelint-config-palantir": "^5.0.0",
     "stylelint-scss": "^3.19.0"
   },
   "dependencies": {
-    "@aztlan/destination": "0.0.1-alpha.0",
-    "@aztlan/stylebook": "0.0.3",
-    "@aztlan/swatch": "0.0.1-beta.0"
+    "@aztlan/destination": "^0.1.0",
+    "@aztlan/stylebook": "^0.1.0",
+    "@aztlan/swatch": "^0.1.0"
   }
 }
