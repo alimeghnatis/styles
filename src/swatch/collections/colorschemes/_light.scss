@@ -16,6 +16,8 @@ $text-white:#ffffff;
 // Note for future team members : this is the colorscheme of Chinmaya,
 // published on this PR https://github.com/HelloPareto/styles/pull/1/files
 
+/* stylelint-disable function-whitespace-after -- Not needed here */
+
 $colorscheme:(
   // Wheel
   "red":[#d62622 #b50b30 #ff8582 $text-white],
@@ -40,6 +42,7 @@ $colorscheme:(
   "metadata":[var(--grey) var(--dark-grey) var(--light-grey) var(--on-grey)],
   "link":[var(--blue) var(--dark-blue) var(--light-blue) var(--on-blue)],
   "navlink":[var(--violet) var(--dark-violet) var(--light-violet) var(--on-violet)],
+  "grid":[var(--paragraph) var(--dark-paragraph) var(--light-paragraph) var(--on-paragraph)],
   // Experimental from https://coolors.co/d0d3dc-d7d5d7-f0d4d1-ffe1c2-e4ddde
   "exp":[#d0d3dc #b9bdcb #e8e9ee $text-black], //Super light blue
   "exp2":[#d7d5d7 #c3c1c3 #ebeaeb $text-black], //Super light grey

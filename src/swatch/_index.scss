@@ -20,7 +20,7 @@
   @include mixins.setters-from-map(palettes.$monochrome-palette);
   @include mixins.setters-from-map(default-palettes.$social-media-palette);
   @include mixins.define-theme(colorschemes.$light-colorscheme, "ui-light", true);
-  // @include mixins.define-theme(colorschemes.$dark-colorscheme, "ui-dark");
+  @include mixins.define-theme(colorschemes.$dark-colorscheme, "ui-dark");
   //@include mixins.define-theme-extras(vars.$colorscheme-light-extras, "ui-light");
   @include mixins.getters;
 }
