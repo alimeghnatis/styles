@@ -2095,6 +2095,24 @@ pre {
   --on-y: var(--on-navlink);
 }
 
+.x-border,
+.xh-border:focus,
+.xh-border:hover {
+  --x: var(--border);
+  --light-x: var(--light-border);
+  --dark-x: var(--dark-border);
+  --on-x: var(--on-border);
+}
+
+.y-border,
+.yh-border:focus,
+.yh-border:hover {
+  --y: var(--border);
+  --light-y: var(--light-border);
+  --dark-y: var(--dark-border);
+  --on-y: var(--on-border);
+}
+
 .x-exp,
 .xh-exp:focus,
 .xh-exp:hover {
@@ -2429,6 +2447,10 @@ pre {
   --dark-navlink: var(--dark-violet);
   --light-navlink: var(--light-violet);
   --on-navlink: var(--on-violet);
+  --border: var(--paragraph);
+  --dark-border: var(--dark-paragraph);
+  --light-border: var(--light-paragraph);
+  --on-border: var(--on-paragraph);
   --exp: #d0d3dc;
   --dark-exp: #b9bdcb;
   --light-exp: #e8e9ee;
@@ -2449,6 +2471,93 @@ pre {
   --dark-exp5: #dbd2d3;
   --light-exp5: #f6f4f4;
   --on-exp5: #292828;
+}
+
+.ui-dark {
+  --red: #d62622;
+  --dark-red: #b50b30;
+  --light-red: #ff8582;
+  --on-red: #ffffff;
+  --pink: #ffa291;
+  --dark-pink: #de6d68;
+  --light-pink: #ffcac1;
+  --on-pink: #292828;
+  --orange: #ff7b00;
+  --dark-orange: #de5200;
+  --light-orange: #ffa95a;
+  --on-orange: #292828;
+  --yellow: #ffb800;
+  --dark-yellow: #ff7b00;
+  --light-yellow: #ffd15a;
+  --on-yellow: #292828;
+  --indigo: #a0dec8;
+  --dark-indigo: #71d1af;
+  --light-indigo: #f0f6f3;
+  --on-indigo: #ffffff;
+  --indigo2: #a0dec8;
+  --dark-indigo2: #71d1af;
+  --light-indigo2: #f0f6f3;
+  --on-indigo2: #292828;
+  --green: #00af5f;
+  --dark-green: #3e8e00;
+  --light-green: #4cd896;
+  --on-green: #ffffff;
+  --blue: #007fe3;
+  --dark-blue: #0d61de;
+  --light-blue: #5ab6ff;
+  --on-blue: #ffffff;
+  --violet: #bd8ce6;
+  --dark-violet: #8a64c5;
+  --light-violet: #e5c7ff;
+  --on-violet: #ffffff;
+  --clear: #f0f6f3;
+  --dark-clear: #a0dec8;
+  --light-clear: #ffffff;
+  --on-clear: #a0dec8;
+  --success: var(--green);
+  --dark-success: var(--dark-green);
+  --light-success: var(--light-green);
+  --on-success: var(--on-green);
+  --warning: var(--orange);
+  --dark-warning: var(--dark-orange);
+  --light-warning: var(--light-orange);
+  --on-warning: var(--on-orange);
+  --error: var(--red);
+  --dark-error: var(--dark-red);
+  --light-error: var(--light-red);
+  --on-error: var(--on-red);
+  --background: var(--black);
+  --dark-background: var(--dark-black);
+  --light-background: var(--light-black);
+  --on-background: var(--on-black);
+  --paragraph: var(--white);
+  --dark-paragraph: var(--dark-white);
+  --light-paragraph: var(--light-white);
+  --on-paragraph: var(--on-white);
+  --heading: var(--white);
+  --dark-heading: var(--dark-white);
+  --light-heading: var(--light-white);
+  --on-heading: var(--on-white);
+  --subtitle: var(--pearl);
+  --dark-subtitle: var(--dark-pearl);
+  --light-subtitle: var(--light-pearl);
+  --on-subtitle: var(--on-pearl);
+  --metadata: var(--grey);
+  --dark-metadata: var(--dark-grey);
+  --light-metadata: var(--light-grey);
+  --on-metadata: var(--on-grey);
+  --link: var(--blue);
+  --dark-link: var(--dark-blue);
+  --light-link: var(--light-blue);
+  --on-link: var(--on-blue);
+  --navlink: var(--violet);
+  --dark-navlink: var(--dark-violet);
+  --light-navlink: var(--light-violet);
+  --on-navlink: var(--on-violet);
+  --border: var(--paragraph);
+  --dark-border: var(--dark-paragraph);
+  --light-border: var(--light-paragraph);
+  --on-border: var(--on-paragraph);
 }
 
 .b-x {
